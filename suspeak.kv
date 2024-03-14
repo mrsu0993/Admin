@@ -79,11 +79,11 @@
     size: "300dp", "400dp"
     auto_dismiss: True
     title: "Chọn file nói"
+    theme_text_color: "Custom"
+    text_color:1, 1, 1, 1
     ScrollView:
         MDList:
             id: dropdown_list
-            theme_text_color: "Custom"
-            text_color: 0, 0, 1, 1
 
 <OneLineListItem>:
     on_release: app.root.select_audio(self.text)
