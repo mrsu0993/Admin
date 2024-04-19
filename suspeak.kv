@@ -1,0 +1,89 @@
+<MediaPlayer>:
+    orientation: 'vertical'
+    padding: '20dp'
+    spacing: '10dp'
+
+    MDLabel:
+        id: total_word_count_label
+        text: ""
+        font_size: '16sp'
+        halign: "center"
+        pos_hint: {"center_x": 0.5}
+        font_size: '26sp'
+
+    MDLabel:
+        id: word_count_label
+        text: "HỌC TIẾNG ANH LÀ ĐỂ NÓI, HÃY TẬP TRUNG VÀO NÓI"
+        font_size: '16sp'
+        halign: "center"
+        pos_hint: {"center_x": 0.5}
+        font_size: '30sp'
+
+    MDLabel:
+        id: current_file_label
+        text: "Su Speak"
+        font_size: '120sp'
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        theme_text_color: "Custom"
+        text_color: 0, 0, 1, 1
+
+    MDSlider:
+        id: progress_slider
+        min: 0
+        max: 1
+        value: 0
+        on_touch_down: root.slider_touch_down(*args)
+        on_touch_move: root.slider_touch_move(*args)
+        on_touch_up: root.slider_touch_up(*args)
+
+    MDLabel:
+        id: index_word
+        text: "Đến lúc này bạn chưa NÓI được, Chứng tỏ KHÔNG có phương pháp nào hiệu quả!"
+        font_size: '16sp'
+        halign: "center"
+        pos_hint: {"center_x": 0.5}
+        font_size: '26sp'
+
+    MDLabel:
+        id: comment_su
+        text: "CHƯƠNG TRÌNH ĐANG THI CÔNG"
+        font_size: '16sp'
+        halign: "center"
+        pos_hint: {"center_x": 0.5}
+        font_size: '26sp'
+
+    MDTextField:
+        id: current_index_text
+        hint_text: "Current Index"
+        size_hint: None, None
+        size: 200, 48
+        pos_hint: {"center_x": 0.5}
+
+    BoxLayout:
+        id: label
+        halign: "center"
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+
+    BoxLayout:
+        size_hint_y: None
+        height: '48dp'
+        MDIconButton:
+            id: play_button
+            icon: 'play'
+            on_release: root.play_pause()
+            md_bg_color: app.theme_cls.primary_color
+
+<DropdownPopup>:
+    size_hint: None, None
+    size: "300dp", "400dp"
+    auto_dismiss: True
+    title: "Chọn file nói"
+    theme_text_color: "Custom"
+    text_color:1, 1, 1, 1
+    ScrollView:
+        MDList:
+            id: dropdown_list
+
+<OneLineListItem>:
+    on_release: app.root.select_audio(self.text)

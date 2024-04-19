@@ -1,0 +1,16 @@
+{
+  "dialogs" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/dialogs.kv",
+  "intro_screen" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/intro_screen.kv",
+  "dropdown_dialog" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/dropdown_dialog.kv",
+  "ui_class" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/ui_class.kv",
+  "dropdown_popup" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/dropdown_popup.kv",
+  "change_pass_screen" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/change_pass_screen.kv",
+  "copyright_buy_screen" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/copyright_buy_screen.kv",
+  "copyright_screen" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/copyright_screen.kv",
+  "forgot_pass_screen" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/forgot_pass_screen.kv",
+  "login_screen" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/login_screen.kv",
+  "signup_screen" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/signup_screen.kv",
+  "speak_screen" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/speak_screen.kv",
+  "verify_change_screen" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/verify_change_screen.kv",
+  "verify_signup_screen" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/verify_signup_screen.kv"
+}
