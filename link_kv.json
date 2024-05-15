@@ -1,5 +1,6 @@
 {
   "dialogs" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/dialogs.kv",
+  "readme_screen" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/readme_screen.kv",
   "intro_screen" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/intro_screen.kv",
   "dropdown_dialog" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/dropdown_dialog.kv",
   "ui_class" : "https://raw.githubusercontent.com/mrsu0993/kv_file/master/ui_class.kv",
